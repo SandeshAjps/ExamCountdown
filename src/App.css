@@ -1,0 +1,144 @@
+/* Reset & Base Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #eef5ff, #d6e4ff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+/* Main container (broad on desktop) */
+.container {
+  background: #fff;
+  padding: 2rem 3rem;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+/* Dropdown */
+.dropdown {
+  padding: 0.9rem 1rem;
+  width: 100%;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  background-color: #f5f5f5;
+}
+
+/* Countdown */
+.countdown {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+/* Download Button */
+.download-btn {
+  padding: 0.9rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2.5rem;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Categories Section */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.category-block {
+  background: #f0f4ff;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.category-block h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.category-block ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.category-block li {
+  list-style: disc;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+.countdown.alert {
+  color: red;
+  font-weight: bold;
+}
+.exam-body-tag{
+  font-size: small;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .dropdown {
+    font-size: 1rem;
+  }
+
+  .countdown {
+    font-size: 1.4rem;
+  }
+
+  .download-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+  }
+
+  .categories {
+    grid-template-columns: 1fr;
+  }
+}
